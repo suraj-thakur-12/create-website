@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.second-container{
+    height: 100vh;
+    display: grid;
+    row-gap: 8px;
+    column-gap: 7px;
+    grid-template-areas:
+                        "box1 box1 box1 box1"
+                        "box2 box3 box4 box4"
+                        "box5 box6 box4 box4"
+                        "box7 box7 box8 box8";
+}
+
+/* #ffffff5f */
+.box {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color:  rgb(40, 40, 63);
+    color: white;
+    text-align: center;
+    justify-items: center;
+    font-size: 30px;
+
+    /* border: none; */
+  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(16, 16, 40);
+    width: 100%; /* ✔ Full screen ke barabar */
+    max-width: 100vw; /* optional: screen se zyada na ho */
+    overflow-x: hidden; /* optional: scroll bar chhupane ke liye */
+    /* margin: 15px; */
+    padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ul::before {
+  content: "Cacelylics";
+  margin-right: 30px;
+  font-size: 20px;
+  color: #00bcd4;
+}
+
+.ul li {
+  margin: 0 10px;
+}
+
+.ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.ul li a:hover {
+  background-color: #00bcd4;
+  color: black;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img i {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.img img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+/* .... */
+h2{
+    margin: 5px;
+    padding: 8px;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+    text-align: center;
+    justify-content: center;
+}
+.box3{
+    grid-area: box3;
+    text-align: center;
+    justify-content: center;
+}
+.box4{
+    grid-area: box4;
+    text-align: center;
+    justify-content: center;
+}
+
+.box5{
+    grid-area: box5;
+    text-align: center;
+    justify-content: center;
+}
+.box6{
+    grid-area: box6;
+    text-align: center;
+    justify-content: center;
+}
+.box7{
+    grid-area: box7;
+    text-align: center;
+    justify-content: center;
+}
+.box8{
+    grid-area: box8;
+    /* background-color:rgb(16, 16, 40); */
+    text-align: center;
+    justify-content: center;
+}
+
+.side-bar{
+    margin: 5px;
+    color: white;
+}
+strong{
+    font-size: 24px;
+    font-weight: bold;
+    /* color: #007bff; */
+    color: rgb(108, 155, 36);
+}
+
+
+
+
+
